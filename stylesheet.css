@@ -1,0 +1,258 @@
+body {
+    background-color: #F9FAFD;
+    font-family: 'Inter', sans-serif;
+    font-size: 12.5px;
+}
+
+p {
+    color: #58667E;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #828C9E;
+}
+
+.main {
+    width: 1260px;
+    /* height: 660px; */
+    margin: 70px auto;
+}
+
+.profile {
+    position: fixed;
+    box-sizing: border-box;
+    padding: 50px 35px;
+    width: 274px;
+    height: 660px;
+    background-color: white;
+    border: 1px solid #E4E8F1;
+    border-radius: 14px;
+    box-shadow: 0px 0px 0px 0.1px #e4e8f1, 0px 2px 5px 1px rgb(0 0 0 / 4%);
+    z-index: 99;
+}
+
+.profile .intro {
+    margin-bottom: 40px;
+}
+
+.profile .intro img {
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+.profile .intro h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #171924;
+}
+
+.profile .intro h2 {
+    font-size: 14px;
+    font-weight: 300;
+    color: #58667E;
+}
+
+.profile .intro hr {
+    margin: 14px 0px;
+}
+
+.profile .intro p {
+    line-height: 1.55;
+}
+
+.skills-container {
+    margin-bottom: 45px;
+}
+
+.skills-container ul.tabs {
+    position: relative;
+    font-size: 9px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.skills-container ul.tabs li {
+    cursor: pointer;
+    padding: 8px 17px 7px;
+    font-weight: 500;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: #F0F5FF;
+    color: #597EF7;
+}
+
+.skills-container ul.tabs::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 1px;
+    width: 138px;
+    border: 1px solid #f0f5ff;
+}
+
+.skills-container ul li.selected {
+    color: #58667E;
+    border: 1px solid #E4E8F1;
+    border-bottom: none;
+    background-color: #ffffff;
+}
+
+.skills-container .skills ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -2.5px;
+}
+
+.skills-container .skills ul li {
+    margin: 2.5px;
+    display: flex;
+    padding: 6px 15px;
+    border-radius: 6px;
+    border: 1px solid #E4E8F1;
+    align-items: center;
+}
+
+.skills-container .skills ul li i.skill-item {
+    font-size: 14px;
+    padding-right: 7px;
+}
+
+.socials {
+    margin-bottom: 75px;
+}
+
+.socials ul.links {
+    display: flex;
+    font-size: 19px;
+}
+
+.socials ul.links li:last-child {
+    font-size: 18px;
+}
+
+.socials ul.links li i.fab,
+.fas {
+    color: #171924;
+}
+
+.socials ul.links li {
+    padding-right: 25px;
+    border-radius: 100px;
+}
+
+nav.navigation {
+    position: relative;
+    margin-bottom: 75px;
+}
+
+nav.navigation ul li.dot {
+    opacity: .15;
+}
+
+nav.navigation ul {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.navigation ul li {
+    padding-bottom: 5px;
+}
+
+nav.navigation ul li a:hover {
+    color: #597EF7;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #597EF7;
+}
+
+footer {
+    color: #C0C6D1;
+    text-align: center;
+    font-size: 11px;
+}
+
+footer .made i.fas.fa-heart {
+    color: #FF8989;
+    padding: 0px 5px;
+}
+
+.projects {
+    margin-left: 310px;
+    width: 1000px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.projects .project {
+    width: 450px;
+    height: 309px;
+    border-radius: 13px;
+    padding: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 1px #E4E8F1;
+    margin: 0px 8px 8px 0px;
+    overflow: hidden;
+}
+
+
+/* Transition Effects */
+
+.projects .project .project-intro .img-container .options {
+    display: none;
+}
+
+.projects .project .img-container img {
+    height: 175px;
+    transition: 0.4s;
+}
+
+.projects .project:hover .img-container img {
+    height: 175px;
+    transition: 0.4s;
+}
+
+.projects .project:hover figcaption {
+    transition: .4s;
+    opacity: 0;
+}
+
+.projects .project .project-info {
+    position: relative;
+    bottom: 46px;
+    padding: 18px 20px 14px;
+}
+
+.projects .project:hover .project-info {
+    display: block;
+}
+
+.projects .project .project-info .details h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.projects .project .project-info .details p {
+    line-height: 1.5;
+}
+
+.projects .project .project-intro .img-container img {
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.projects .project .project-intro figcaption {
+    display: flex;
+    padding: 18px 20px 14px;
+    align-items: baseline;
+}
+
+.projects .project .project-intro figcaption h3 {
+    padding-right: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}

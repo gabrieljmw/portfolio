@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel J Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/837b18ea79.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="custom.js"></script>
 </head>
@@ -19,50 +23,56 @@
                 <img src="images/avatar.jpg" alt="/" width="65" height="65">
                 <h1>Gabriel Wildman <span>_</span></h1>
                 <h2>Full-Stack Developer, Designer</h2>
-                <hr>
+                <hr color="#EFF2F5" size="1px">
                 <p>I’m a web developer with a love for Front-End, Back-End, UX/UI, 3D visualization, and poetry.</p>
             </div>
             <div class="skills-container">
                 <ul class="tabs">
-                    <li>Code</li>
-                    <li>Design</li>
-                    <li>Tools</li>
+                    <li class="selected">CODE</li>
+                    <li>DESIGN</li>
+                    <li>TOOLS</li>
                 </ul>
                 <div class="skills">
                     <ul>
-                        <li>Javascript</li>
-                        <li>CSS</li>
-                        <li>HTML5</li>
-                        <li>React</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
+                        <li><i class="fab skill-item fa-js-square" style="color: #FADB14"></i> Javascript</li>
+                        <li><i class="fab skill-item fa-css3-alt" style="color: #1890FF"></i> CSS</li>
+                        <li><i class="fab skill-item fa-html5" style="color: #FA8C16"></i> HTML5</li>
+                        <li><i class="fab skill-item fa-react" style="color: #69C0FF"></i>React</li>
+                        <li><i class="fab skill-item fa-php" style="color:#B37FEB"></i> PHP</li>
+                        <li><i class="fas skill-item fa-database smaller" style="font-size: 12px;"></i> MySQL</li>
                     </ul>
                 </div>
             </div>
             <div class="socials">
                 <ul class="links">
-                    <li><i class="fab fa-github-square"></i></li>
-                    <li><i class="fab fa-linkedin"></i></li>
-                    <li><i class="fas fa-envelope-square"></i></li>
+                    <li><a href=""><i class="fab link fa-github"></i></a></li>
+                    <li><a href=""><i class="fab link fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fas link fa-at"></i></a></li>
                 </ul>
             </div>
             <nav class="navigation">
                 <ul>
-                    <li>About</li>
-                    <li>Resume</li>
-                    <li>Work</li>
+                    <li><a href="">About</a></li>
+                    <li class="dot">•</li>
+                    <li><a href="">Resumé</a></li>
+                    <li class="dot">•</li>
+                    <li><a href="" class="active">Work</a></li>
                 </ul>
-                <footer>Made with <i class="fas fa-heart"></i> in Toronto.</footer>
             </nav>
+            <footer>
+                <div class="made">Made with <i class="fas fa-heart"></i> in Toronto.</div>
+            </footer>
         </section>
-        <!-- Profile -->
+        <!-- Profile end -->
         <section class="projects">
             <article class="project">
                 <figure class="project-intro">
                     <div class="img-container">
-                        <div class="readCase"><span>Read Case Study</span></div>
-                        <div class="viewCode"><span>View Code</span><i class="fab fa-github-square"></i></div>
-                        <img src="images/article1.jpg" alt="" width="454" height="260">
+                        <div class="options">
+                            <div class="readCase"><span>Read Case Study</span></div>
+                            <div class="viewCode"><span>View Code</span><i class="fab fa-github-square"></i></div>
+                        </div>
+                        <img src="images/article1.jpg" alt="" width="100%" height="260">
                     </div>
                     <figcaption>
                         <h3>Passive Stake</h3>
@@ -84,7 +94,124 @@
                     </div>
                 </div>
             </article>
+            <!-- <article class="project">
+                <figure class="project-intro">
+                    <div class="img-container">
+                        <div class="options" style="display: none;">
+                            <div class="readCase"><span>Read Case Study</span></div>
+                            <div class="viewCode"><span>View Code</span><i class="fab fa-github-square"></i></div>
+                        </div>
+                        <img src="images/article1.jpg" alt="" width="100%" height="260">
+                    </div>
+                    <figcaption>
+                        <h3>Passive Stake</h3>
+                        <p>UX/UI, Front-End, 3D Modeling</p>
+                    </figcaption>
+                </figure>
+                <div class="project-info" style="display: none;">
+                    <div class="details">
+                        <h4>Passive Stake</h4>
+                        <p>Collborated with the co-founders of Passive Stake, a Fin-Tech startup, to research, design, and develop their online presence.</p>
+                    </div>
+                    <div class="project-tags">
+                        <div class="tools"><i class="fas fa-tools"></i></div>
+                        <ul class="tags">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <figure class="project-intro">
+                    <div class="img-container">
+                        <div class="options" style="display: none;">
+                            <div class="readCase"><span>Read Case Study</span></div>
+                            <div class="viewCode"><span>View Code</span><i class="fab fa-github-square"></i></div>
+                        </div>
+                        <img src="images/article1.jpg" alt="" width="100%" height="260">
+                    </div>
+                    <figcaption>
+                        <h3>Passive Stake</h3>
+                        <p>UX/UI, Front-End, 3D Modeling</p>
+                    </figcaption>
+                </figure>
+                <div class="project-info" style="display: none;">
+                    <div class="details">
+                        <h4>Passive Stake</h4>
+                        <p>Collborated with the co-founders of Passive Stake, a Fin-Tech startup, to research, design, and develop their online presence.</p>
+                    </div>
+                    <div class="project-tags">
+                        <div class="tools"><i class="fas fa-tools"></i></div>
+                        <ul class="tags">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <figure class="project-intro">
+                    <div class="img-container">
+                        <div class="options" style="display: none;">
+                            <div class="readCase"><span>Read Case Study</span></div>
+                            <div class="viewCode"><span>View Code</span><i class="fab fa-github-square"></i></div>
+                        </div>
+                        <img src="images/article1.jpg" alt="" width="100%" height="260">
+                    </div>
+                    <figcaption>
+                        <h3>Passive Stake</h3>
+                        <p>UX/UI, Front-End, 3D Modeling</p>
+                    </figcaption>
+                </figure>
+                <div class="project-info" style="display: none;">
+                    <div class="details">
+                        <h4>Passive Stake</h4>
+                        <p>Collborated with the co-founders of Passive Stake, a Fin-Tech startup, to research, design, and develop their online presence.</p>
+                    </div>
+                    <div class="project-tags">
+                        <div class="tools"><i class="fas fa-tools"></i></div>
+                        <ul class="tags">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="project">
+                <figure class="project-intro">
+                    <div class="img-container">
+                        <div class="options" style="display: none;">
+                            <div class="readCase"><span>Read Case Study</span></div>
+                            <div class="viewCode"><span>View Code</span><i class="fab fa-github-square"></i></div>
+                        </div>
+                        <img src="images/article1.jpg" alt="" width="100%" height="260">
+                    </div>
+                    <figcaption>
+                        <h3>Passive Stake</h3>
+                        <p>UX/UI, Front-End, 3D Modeling</p>
+                    </figcaption>
+                </figure>
+                <div class="project-info" style="display: none;">
+                    <div class="details">
+                        <h4>Passive Stake</h4>
+                        <p>Collborated with the co-founders of Passive Stake, a Fin-Tech startup, to research, design, and develop their online presence.</p>
+                    </div>
+                    <div class="project-tags">
+                        <div class="tools"><i class="fas fa-tools"></i></div>
+                        <ul class="tags">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </div>
+                </div>
+            </article> -->
         </section>
+
     </main>
 
 </body>
