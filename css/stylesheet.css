@@ -1,7 +1,7 @@
 body {
     background-color: #F9FAFD;
     font-family: 'Inter', sans-serif;
-    font-size: 12.5px;
+    font-size: 12.3px;
 }
 
 p {
@@ -15,12 +15,13 @@ a {
 }
 
 .main {
-    width: 1260px;
+    max-width: 1260px;
     /* height: 660px; */
-    margin: 70px auto;
+    margin: 60px auto;
 }
 
 .profile {
+    margin-left: 5px;
     position: fixed;
     box-sizing: border-box;
     padding: 50px 35px;
@@ -182,13 +183,12 @@ footer .made i.fas.fa-heart {
 
 .projects {
     margin-left: 310px;
-    width: 1000px;
     display: flex;
     flex-flow: row wrap;
 }
 
 .projects .project {
-    width: 450px;
+    position: relative;
     height: 309px;
     border-radius: 13px;
     padding: 8px;
@@ -199,24 +199,73 @@ footer .made i.fas.fa-heart {
 }
 
 
-/* Transition Effects */
+/*  --------------------------------
+    Transition Effects 
+    TODO : Convert this to JS later. 
+    --------------------------------  */
 
-.projects .project .project-intro .img-container .options {
-    display: none;
+.projects .project-intro .options {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.projects .project:hover .options {
+    opacity: 1;
+    transition: .1s;
+}
+
+.projects .project-intro .options .option {
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+
+.projects .project-intro .options .option.readCase {
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 5px;
+    transition: .2s;
+}
+
+.projects .project-intro .options .option.readCase:hover {
+    background-color: #171924;
+    color: white;
+    transition: .2s;
+}
+
+.projects .project-intro .options .option.viewCode {
+    background-color: #171924;
+    color: #fff;
+}
+
+.option.viewCode i {
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.projects .project .img-container {
+    position: relative;
 }
 
 .projects .project .img-container img {
-    height: 175px;
-    transition: 0.4s;
+    height: 260px;
+    transition: 0.5s;
 }
 
 .projects .project:hover .img-container img {
     height: 175px;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
-.projects .project:hover figcaption {
-    transition: .4s;
+.projects .project figcaption p {
+    transition: .5s;
+    opacity: 1;
+}
+
+.projects .project:hover figcaption p {
+    transition: .3s;
     opacity: 0;
 }
 
@@ -224,11 +273,19 @@ footer .made i.fas.fa-heart {
     position: relative;
     bottom: 46px;
     padding: 18px 20px 14px;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .projects .project:hover .project-info {
-    display: block;
+    opacity: 1;
+    transition: 0.3s;
 }
+
+
+/* -------------------------
+    END Transition Effects 
+   ------------------------- */
 
 .projects .project .project-info .details h4 {
     font-size: 14px;
@@ -238,6 +295,7 @@ footer .made i.fas.fa-heart {
 
 .projects .project .project-info .details p {
     line-height: 1.5;
+    margin-bottom: 19px;
 }
 
 .projects .project .project-intro .img-container img {
@@ -255,4 +313,51 @@ footer .made i.fas.fa-heart {
     padding-right: 15px;
     font-size: 14px;
     font-weight: 500;
+}
+
+.project-info .project-tags,
+.project-info .project-tags ul.tags {
+    display: flex;
+}
+
+.projects .project-outer {
+    position: relative;
+    flex: 1 0 425px;
+}
+
+.projects .project-outer .tools i {
+    position: absolute;
+    bottom: 25px;
+    left: -10px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 8px 14px 8px 24px;
+    background-color: #7B7D88;
+    border-radius: 4px 6px 6px 4px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.projects .project-outer:hover .tools i {
+    opacity: 1;
+    left: -5px;
+    transition: 0.3s;
+}
+
+.project-info .project-tags {
+    padding-left: 30px;
+}
+
+.project-info .project-tags ul.tags {
+    font-size: 9px;
+    color: #99A3A9;
+}
+
+.project-info .project-tags ul.tags li {
+    margin-right: 9px;
+    letter-spacing: .3px;
+    font-weight: 500;
+    padding: 7px 11px;
+    border-radius: 4px;
+    background-color: #EFF3F5;
 }
