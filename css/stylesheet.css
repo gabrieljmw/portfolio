@@ -1,3 +1,4 @@
+@import url("stakestyle.css");
 body {
     background-color: #F9FAFD;
     font-family: 'Inter', sans-serif;
@@ -360,4 +361,94 @@ footer .made i.fas.fa-heart {
     padding: 7px 11px;
     border-radius: 4px;
     background-color: #EFF3F5;
+}
+
+
+/* ----------------PS-------
+clean this whole section late
+----------- */
+
+.projects article.case-study {
+    box-shadow: 0px 0px 0px 1px #E4E8F1;
+    background-color: white;
+    border-radius: 13px;
+    padding: 16px;
+    min-width: 600px;
+}
+
+.projects article.case-study img {
+    border-radius: 13px;
+    margin-bottom: 40px;
+}
+
+.projects article.case-study img {
+    width: 100%;
+    border-radius: 13px;
+    margin: 20px 0px;
+}
+
+.project-introductions {
+    padding: 0px 35px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #171924;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.project-flags {
+    margin-right: 90px;
+}
+
+.back {
+    display: inline-block;
+    padding: 8px 45px;
+    background-color: #171924;
+    border-radius: 4px;
+    color: white
+}
+
+.project-introductions .overview ul {
+    width: 450px;
+    font-size: 14px;
+    color: #58667E;
+}
+
+.project-introductions .overview ul li {
+    padding-bottom: 20px;
+}
+
+.projects .case-study .content {
+    margin-top: 20px;
+}
+
+.category {
+    font-weight: 600;
+    color: #171924;
+}
+
+.project-flags .back a {
+    color: white;
+}
+
+.case-study .content h3 {
+    font-family: sans-serif, 'Inter';
+    color: #171924;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.content p,
+.content h3 {
+    font-family: serif;
+    padding: 0px 100px 0px 70px;
+    font-size: 19px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, .8);
+    line-height: 1.6;
 }
