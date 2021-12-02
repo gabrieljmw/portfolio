@@ -1,7 +1,7 @@
 body {
     background-color: #F9FAFD;
     font-family: 'Inter', sans-serif;
-    font-size: 12.3px;
+    font-size: 13px;
 }
 
 p {
@@ -322,7 +322,7 @@ footer .made i.fas.fa-heart {
 
 .projects .project-outer {
     position: relative;
-    flex: 1 0 425px;
+    flex: 1 0 427px;
 }
 
 .projects .project-outer .tools i {
