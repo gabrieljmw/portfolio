@@ -476,9 +476,19 @@ h2 {
     .skills-container {
         display: none;
     }
+    .projects .project .project-intro figcaption {
+        display: block;
+    }
     .projects {
         margin-left: 0;
         margin-top: 20px;
+        display: block;
+    }
+    .projects .project {
+        height: 335px;
+    }
+    .tools {
+        display: none;
     }
     .projects article.project {
         margin: 0px 12px 8px 12px;
