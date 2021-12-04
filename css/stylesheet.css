@@ -364,7 +364,7 @@ footer .made i.fas.fa-heart {
 
 
 /* ----------------PS-------
-clean this whole section late
+clean this whole section later
 ----------- */
 
 .projects article.case-study {
@@ -450,4 +450,49 @@ h2 {
     font-weight: 300;
     color: rgba(0, 0, 0, .8);
     line-height: 1.6;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 15px;
+    }
+    a {
+        font-size: 16px;
+    }
+    nav.navigation {
+        margin-bottom: 0px;
+    }
+    .profile {
+        position: relative;
+        margin: 0 auto;
+        width: 295px;
+        height: auto;
+        background-color: transparent;
+        text-align: center;
+        border: none;
+        box-shadow: none;
+        height: none;
+    }
+    .skills-container {
+        display: none;
+    }
+    .projects {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .projects article.project {
+        margin: 0px 12px 8px 12px;
+    }
+    .socials ul.links {
+        justify-content: center;
+    }
+    .socials ul.links li {
+        padding: 20px;
+    }
+    .made {
+        display: none;
+    }
+    .socials ul.links li a i {
+        font-size: 25px;
+    }
 }
