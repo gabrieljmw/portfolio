@@ -452,12 +452,18 @@ h2 {
     line-height: 1.6;
 }
 
+
+/* Mobile ------------- */
+
 @media screen and (max-width: 800px) {
     body {
         font-size: 15px;
     }
     a {
         font-size: 16px;
+    }
+    .projects .project:hover .img-container img {
+        height: 115px;
     }
     nav.navigation {
         margin-bottom: 0px;
@@ -484,8 +490,11 @@ h2 {
         margin-top: 20px;
         display: block;
     }
+    .project-info .project-tags {
+        padding-left: 0;
+    }
     .projects .project {
-        height: 335px;
+        height: 320px;
     }
     .tools {
         display: none;
