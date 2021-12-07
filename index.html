@@ -13,7 +13,6 @@
     <script src="https://kit.fontawesome.com/837b18ea79.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/stylesheet.css">
-    <script src="custom.js"></script>
 </head>
 
 <body>
@@ -30,18 +29,34 @@
             </div>
             <div class="skills-container">
                 <ul class="tabs">
-                    <li class="selected">CODE</li>
-                    <li>DESIGN</li>
-                    <li>TOOLS</li>
+                    <li class="selected" data-type="code">CODE</li>
+                    <li data-type="design">DESIGN</li>
+                    <li data-type="tools">TOOLS</li>
                 </ul>
                 <div class="skills">
-                    <ul>
+                    <ul class="code">
                         <li><i class="fab skill-item fa-js-square" style="color: #FADB14"></i> Javascript</li>
                         <li><i class="fab skill-item fa-css3-alt" style="color: #1890FF"></i> CSS</li>
                         <li><i class="fab skill-item fa-html5" style="color: #FA8C16"></i> HTML5</li>
                         <li><i class="fab skill-item fa-react" style="color: #69C0FF"></i>React</li>
                         <li><i class="fab skill-item fa-php" style="color:#B37FEB"></i> PHP</li>
                         <li><i class="fas skill-item fa-database smaller" style="font-size: 12px;"></i> MySQL</li>
+                    </ul>
+                    <ul class="design hide">
+                        <li><i class="fas skill-item fa-search"></i>Research</li>
+                        <li><i class="fas skill-item fa-fingerprint"></i>IxD</li>
+                        <li><i class="fas skill-item fa-drafting-compass"></i>Prototypes</li>
+                        <li><i class="fas skill-item fa-sitemap"></i>IA</li>
+                        <li><i class="fas skill-item fa-map-marked-alt"></i>Mapping</li>
+                        <li><i class="fas skill-item fa-border-none"></i>Wires</li>
+                    </ul>
+                    <ul class="tools hide">
+                        <li><i class="fab skill-item fa-figma"></i> Figma</li>
+                        <li><i class="fas skill-item fa-cube" style="color: #31b2c2"></i> Maya</li>
+                        <li><i class="fas skill-item fa-pen-nib" style="color: #f25dea"></i> XD</li>
+                        <li><i class="far skill-item fa-images" style="color: #2f9ff2"></i> Photoshop</li>
+                        <li><i class="fas skill-item fa-bezier-curve" style="color: #f29202"></i> Illustrator</li>
+                        <li><i class="fas skill-item fa-video" style="color: #9191f2"></i> AE</li>
                     </ul>
                 </div>
             </div>
@@ -223,7 +238,7 @@
         </section>
 
     </main>
-
+    <script src="js/custom.js"></script>
 </body>
 
 </html>
