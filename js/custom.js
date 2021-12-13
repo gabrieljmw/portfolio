@@ -8,9 +8,9 @@ let skillTabs = document.querySelectorAll('.tabs li');
 
 skillTabs.forEach(tab => {
     tab.addEventListener('click', function(e) {
-        let tabsSelected = document.querySelectorAll('.selected')
+        let sel = document.querySelectorAll('.selected')
 
-        tabsSelected.forEach(el => {
+        sel.forEach(el => {
             el.classList.remove('selected')
         });
         e.target.classList.add('selected')
