@@ -219,6 +219,9 @@ footer .made i.fas.fa-heart {
     transition: .1s;
 }
 
+
+/*#ffbfbf*/
+
 .projects .project-intro .options .option {
     padding: 8px 18px;
     border-radius: 4px;
@@ -266,7 +269,8 @@ footer .made i.fas.fa-heart {
     opacity: 1;
 }
 
-.projects .project:hover figcaption p {
+.projects .project:hover figcaption p,
+.projects .project:hover figcaption span {
     transition: .3s;
     opacity: 0;
 }

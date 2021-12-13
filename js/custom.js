@@ -1,5 +1,4 @@
-let skillTabs = document.querySelectorAll('.tabs li');
-
+let skillTabs = document.querySelectorAll('.tabs .tab');
 
 /* adding an event listener for each tab instead of just on <ul>
     allows for prevention of clicking the gap inbetween the tabs and
@@ -7,10 +6,10 @@ let skillTabs = document.querySelectorAll('.tabs li');
 */
 
 skillTabs.forEach(tab => {
-    tab.addEventListener('click', function(e) {
-        let sel = document.querySelectorAll('.selected')
+    tab.addEventListener('click', e => {
+        let tab = document.querySelectorAll('.tab')
 
-        sel.forEach(el => {
+        tab.forEach(el => {
             el.classList.remove('selected')
         });
         e.target.classList.add('selected')
